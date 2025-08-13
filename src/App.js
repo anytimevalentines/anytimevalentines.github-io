@@ -25,46 +25,49 @@ function App() {
       <section className="py-12 px-6 bg-blue-600 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-extrabold mb-8 drop-shadow-lg">How It Works</h2>
-          <p className="mb-4">
+          <p className="text-xl md:text-2xl leading-relaxed mb-6">
             We send you a <strong>pack of 50 stickers</strong>.
           </p>
-          <p className="mb-4">
-            Write a note on the back — to a friend, a family member, or a stranger — to <strong>make them feel appreciated!</strong>
+          <p className="text-xl md:text-2xl leading-relaxed mb-6">
+            <b>Write a note on the back</b> <br /> to a <b>friend</b>, a <b>family member</b>, or a <b>stranger</b> <br /> and <strong>make them feel appreciated!</strong>
           </p>
 
-          <ul className="list-disc list-inside space-y-4 mb-6">
-            <li>
-              Write one to your <b>mom</b> or <b>dad</b>:<br />
-              <span className="pl-8 block">
-                “<b>Thank you</b> for <u>EVERYTHING</u> you ever did for me; I'm sorry about that one time when I was 16 (you know the one).”
-              </span>
-              <span className="pl-8 block">
-                “I just want you to know I <strong>appreciate</strong> <u>EVERYTHING</u> you ever did for me, because you made a really cool kid — ME!”
-              </span>
-            </li>
+          
+<table className="table-auto w-full text-left border-collapse border border-gray-300 bg-blue-200 rounded-lg overflow-hidden">
+  <thead className="bg-blue-700 text-white">
+    <tr>
+      <th className="p-4 text-xl">Who to Give It To</th>
+      <th className="p-4 text-xl">Examples</th>
+    </tr>
+  </thead>
+  <tbody className="text-lg">
+    <tr className="border-t border-gray-300">
+      <td className="p-4 align-top font-semibold">Your Mom, your Dad, your Brother or Sister, Aunt or Uncle, Cousin or Grandparent</td>
+      <td className="p-4 space-y-2">
+        <div>“<b>Thank you</b> for <u>EVERYTHING</u> you ever did for me; I'm sorry about that one time when I was 16 (you know the one).”</div>
+        <div>“I just want you to know I <strong>appreciate</strong> <u>EVERYTHING</u> you ever did for me, because you made a really cool kid — ME!”</div>
+      </td>
+    </tr>
+    <tr className="border-t border-gray-300">
+      <td className="p-4 align-top font-semibold">Your Friends</td>
+      <td className="p-4 space-y-2">
+        <div><b>“I LOVE AND APPRECIATE YOU!!!”</b></div>
+        <div>“Thanks for always being there for me. <strong>I wouldn't be here if it wasn't for you.</strong>”</div>
+		<div>“Thanks for holding my hair back that one time after I broke up with so-and-so. I owe you one.”</div>
+      </td>
+    </tr>
+    <tr className="border-t border-gray-300">
+      <td className="p-4 align-top font-semibold">Your favorite bartender or Waffle House waitress</td>
+      <td className="p-4">
+        <div><strong>“Your smile makes all the difference.”</strong></div>
+		<div>“Your waffles and coffee saved my life tonight”</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
 
-            <li>
-              Give one to your <b>best friend</b>:<br />
-              <span className="pl-8 block">
-                “Thanks for always being there for me. <strong>I wouldn't be here if it wasn't for you.</strong>”
-              </span>
-              <span className="pl-8 block">
-                “Thanks for holding my hair back that one time I drank too much after the breakup. I owe you one.”
-              </span>
-              <span className="pl-8 block">
-                <b>“I LOVE YOU!!! AND I APPRECIATE YOU!!!”</b>
-              </span>
-            </li>
-
-            <li>
-              Give one to your favorite <b>bartender</b> or <b>Waffle House waitress</b> for their kindness and good service:<br />
-              <span className="pl-8 block font-semibold">
-                “Your smile makes all the difference.”
-              </span>
-            </li>
-          </ul>
-
-          <p className="mb-2">
+          <p className="text-xl md:text-2xl leading-relaxed mb-2">
             If they enjoy your note, give them <b>3 blank stickers</b> so they can make more smiles.
           </p>
         </div>
@@ -96,29 +99,41 @@ function App() {
           Only <span className="text-red-600">12,000 stickers</span> left!
         </h3>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Text Side */}
-          <div>
-            <p className="text-xl leading-relaxed mb-6">
-              For 10 years, I’ve given these away for free — I’ve never once accepted a single dollar for them.{" "}<br /><br />
-              <strong>
-                <span className="text-red-500">❤️</span>{" "}
-                <span className="text-blue-500">&gt;</span>{" "}
-                <span className="text-green-600">$</span>
-              </strong>{" "}
-              has always been the motto.
-            </p>
-            <p className="text-xl leading-relaxed mb-6">
-              But as a single dad with two kids, the well has run dry. I can’t afford to make more on my own.
-              This is the “do or die” moment for the project — if it’s going to keep spreading smiles, I have to start accepting donations.
-            </p>
-            <p className="text-xl leading-relaxed mb-8">
-              Over the years, I’ve given away <strong>1,000 pins</strong>, <strong>50,000 stickers</strong>, and even a batch of postage-stamp-sized stickers — mostly at music festivals, walking on foot, campsite to campsite, spreading smiles one person at a time.
-              But last Christmas I broke my femur, and I can’t do that anymore.
-              This is do or die for the project — if it’s going to keep going, I need your help to keep the love alive.
-            </p>
-            <p className="italic font-bold text-2xl text-center mt-6 drop-shadow-md">"Love Everything Always"</p>
-          </div>
+<div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  {/* Text Side */}
+  <div>
+    <p className="text-xl leading-relaxed mb-6">
+      For 10 years, I’ve given these away for free,<br /> never once taking a single dollar.
+      <br /><br />
+      <strong className="text-4xl md:text-5xl font-extrabold">
+        <span className="text-red-500">❤️</span>{" "}
+        <span className="text-blue-500">&gt;</span>{" "}
+        <span className="text-green-600">$</span>
+      </strong>{" "}
+      has always been the motto.
+    </p>
+
+    <p className="text-xl leading-relaxed mb-6">
+      In that time, I’ve handed out <strong>1,000 pins</strong>, <strong>50,000 stickers</strong>, 
+      and even a batch of mini postage-stamp-sized stickers, mostly at music festivals, walking on foot from campsite to campsite, 
+      spreading love to one campsite at a time.
+    </p>
+
+    <p className="text-xl leading-relaxed mb-6">
+      But last Christmas, I broke my femur, and I can’t make those festival rounds anymore. <br /><br />
+      I have two kids and full time job; I just don't have the time or the money to make it out to festivals anymore. <br /><br />
+	  The well has run dry: I can’t afford to keep making these on my own.
+    </p>
+
+    <p className="text-xl leading-relaxed mb-8">
+      This is the <b>“do or die”</b> moment for this smile-making project. 
+      To keep making exponential smiles, we need your help to keep the love alive.
+    </p>
+
+    <p className="italic font-bold text-2xl text-center mt-6 drop-shadow-md">
+      "Love Everything Always"
+    </p>
+  </div>
 
           {/* Image Side */}
           <div>
